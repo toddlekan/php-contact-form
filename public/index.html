@@ -22,6 +22,9 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <!-- Code Challenge CSS -->
+    <link href="css/emailGuyForm.min.css" rel="stylesheet" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -116,7 +119,89 @@
                 <h2>Contact Guy Smiley</h2>
                 <p>Remember Guy Smiley?  Yeah, he wants to hear from you.</p>
                 <p class="bg-primary">
-                    [[ This is where you'd put your contact form.  Get it done! ]]
+                    <!--[[ This is where you'd put your contact form.  Get it done! ]]-->
+
+
+                    <!-- Code challenge form start -->
+
+
+
+                    <form id="emailGuy" method="POST" action="php/emailGuy.php">
+                        <fieldset>
+
+                            <input type="hidden" id="csrf" class="csrf required" name="csrf" value="" />
+
+                            <legend>
+                                * indicates required field
+                            </legend>
+
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <label for="fullName" class="col-form-label">Full Name *</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control required" id="fullName" name="fullName" value="" />
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <label for="email" class="col-form-label">Email *</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control required email" id="email" name="email" value="" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label for="message" class="col-form-label">Message *</label>
+                                </div>
+                                <div class="col-sm-7 textarea-col">
+                                    <textarea class="form-control required" id="message" name="message" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <label for="phone" class="col-form-label">Phone</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="phone" name="phone" value="" />
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+
+                                <div class="col-sm-4">
+                                    &nbsp;
+                                </div>
+                                <div class="col-sm-7">
+                                    <a href="#" class="btn btn-default btn-lg submit">Submit <div class="loader">Loading...</div></a>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row">
+
+                                <div class="col-sm-4">
+                                    &nbsp;
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="status"></div>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+
+
+
+                    <!-- Code challenge form end -->
+
+
                 </p>
             </div>
         </div>
@@ -146,6 +231,9 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+
+    <!-- Code challenge JavaScript -->
+    <script src="js/emailGuyForm.min.js"></script>
 
 </body>
 
