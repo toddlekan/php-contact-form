@@ -20,9 +20,9 @@ specify if this was a requirement, so arguably duplicates could be desired.
 Again, I just wanted to acknowledge this was an intentional design decision.
 
 NOTE: I understand you will be testing unit tests with the command "phpunit"
-Please add " ." on to the end of the command like:
+Please add " tests" on to the end of the command like:
 
-phpunit .
+phpunit tests
 
 Thank you.
 
